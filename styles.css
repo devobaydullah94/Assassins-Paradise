@@ -1,0 +1,193 @@
+/* Navbar */
+.navbar {
+    background-color: #40c1ac !important;
+    border-bottom: 1px solid #2eb39c;
+}
+
+.navbar-brand {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    font-size: 22px;
+    margin: 0 10px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background-image: url('images/hero-background.png');
+    background-size: cover;
+
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* Shape */
+.hero::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #f8f9fa;
+    clip-path: polygon(0% 100%, 20% 0%, 40% 100%, 60% 0%, 80% 100%, 100% 0%, 100% 100%, 0% 100%);
+    
+}
+
+.hero h1 {
+    color: #ffffff;
+    text-shadow: #000000 2px 2px 2px;
+    font-size: 88px;
+    margin-bottom: 60px;
+}
+
+/* Hero Section img Animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  .hero img {
+    animation: bounce 4s infinite;
+  }
+
+/* Features Section */
+.features {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.feature i {
+    font-size: 62px;
+    color: #40c1ac;
+}
+
+.features h3 {
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+/* Games Section */
+.games {
+    padding: 80px 0;
+}
+
+.games h2 {
+    font-size: 42px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.contact h2 {
+    font-size: 42px;
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Button */
+.btn-primary {
+    background-color: #40c1ac;
+    border-color: #40c1ac;
+}
+
+.btn-primary:hover {
+    background-color: #27b39b;
+    border-color: #27b39b;
+}
+
+/* Game cards */
+.game-card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+}
+
+.game-card .card-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.game-card .card-text {
+    font-size: 16px;
+}
+
+/* Contact img Animation */
+
+@keyframes bounceLeftRight {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(20px);
+    }
+  }
+  
+  .contact img {
+    animation: bounceLeftRight 2s ease-in-out infinite alternate; 
+  }
+  
+
+  .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }  
+
+
+  /* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .navbar-brand {
+        font-size: 24px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 16px;
+    }
+
+/* Shape */
+.hero::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #f8f9fa;
+    clip-path: polygon(0% 100%, 20% 0%, 40% 100%, 60% 0%, 80% 100%, 100% 0%, 100% 100%, 0% 100%);
+    }
+}
